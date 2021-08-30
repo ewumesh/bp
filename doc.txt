@@ -1,0 +1,20 @@
+ng build --prod --base-href https://umeshthapa12.github.io/brikshyaproduction.com/
+
+ ngh -no-silent --dir dist/BrikshyaProduction
+
+npm install -g angular-cli-ghpages
+
+ng build --prod --base-href https://<username>.github.io/<reponame>/
+
+
+
+#GitHub
+You just need a github repository to host on github and make sure that you pushed the latest code.
+Install github pages tool for angular by using, npm install -g angular-cli-ghpages .
+Here deploying code in github pages is quite easy, Just need to make sure one thing, when you build your code, use--base-href tag. Build command here will be 
+ng build --prod --base-href https://<username>.github.io/<reponame>/ 
+Run angular-cli-ghpages -d dist/<project-name>/ --no-silent 
+to deploy your project. -d tag take the location for build stored, in dist file.
+This command will create a new branch gh-pages in your repository and automatically push the dist build in that branch.
+Just navigate to 
+https://<username>.github.io/<reponame>/
